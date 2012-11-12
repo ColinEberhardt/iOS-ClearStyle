@@ -44,6 +44,8 @@ const float SHC_ROW_HEIGHT = 50.0f;
 
 - (void)layoutSubviews
 {
+    [super layoutSubviews];
+    
     _scrollView.frame = self.frame;
     [self refreshView];
 }
