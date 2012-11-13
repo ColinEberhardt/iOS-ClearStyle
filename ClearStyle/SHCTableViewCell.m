@@ -236,9 +236,9 @@ const float UI_CUES_WIDTH = 50.0f;
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField
-{
-    [self.delegate cellDidEndEditing:self];
+{    
     self.todoItem.text = textField.text;
+    [self.delegate cellDidEndEditing:self];
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField

@@ -91,7 +91,7 @@
     {
         [UIView animateWithDuration:0.3
                          animations:^{
-                             cell.frame = CGRectOffset(cell.frame, 0, _editingOffset);
+                             cell.transform = CGAffineTransformMakeTranslation(0,  _editingOffset);
                              if (cell != editingCell)
                              {
                                  cell.alpha = 0.3;
@@ -106,7 +106,7 @@
     {
         [UIView animateWithDuration:0.3
                          animations:^{
-                             cell.frame = CGRectOffset(cell.frame, 0, -_editingOffset);
+                             cell.transform = CGAffineTransformIdentity;
                              if (cell != editingCell)
                              {
                                  cell.alpha = 1.0;
